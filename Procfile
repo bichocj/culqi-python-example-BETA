@@ -1,0 +1,1 @@
+web: cd src; gunicorn eventus.wsgi --log-file -
