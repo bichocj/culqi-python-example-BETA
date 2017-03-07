@@ -1,2 +1,5 @@
 culqipy==0.2.6
 Django==1.10.5
+
+gunicorn==19.4.5
+newrelic==2.66.0.49
