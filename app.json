@@ -1,0 +1,33 @@
+{
+  "name": "culqi-emesh",
+  "description": "",
+  "scripts": {
+    "postdeploy": "cd django_app"
+  },
+  "env": {
+    "DJANGO_DEBUG": {
+      "description": "Django debug mode.",
+      "value": "0"
+    },
+    "SERVER_ENVIRONMENT": {
+      "description": "Server enviroment.",
+      "value": "review"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql",
+    "papertrail",
+    "scheduler",
+    "sendgrid"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
