@@ -1,1 +1,1 @@
-web: cd django_app; gunicorn eventus.wsgi --log-file -
+web: cd django_app; gunicorn django_app.wsgi --log-file -
