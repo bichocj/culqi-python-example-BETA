@@ -15,7 +15,8 @@ def charges(request):
         token = request.POST['token']
         installments = request.POST['installments']
 
-        culqipy.secret_key = "sk_test_UTCQSGcXW8bCyU59"
+        # culqipy.secret_key = "sk_test_UTCQSGcXW8bCyU59"
+        culqipy.secret_key = "tc1NOhPJbLqWwwZL16l24/SYDDdLD7t55PwO5Giwf0cs="
 
         dir_charge = {'amount': 3500,
                       'capture': True,
